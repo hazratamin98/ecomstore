@@ -6,11 +6,21 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+    theme: {
+      extend: {
+        fontFamily: {
+          poppins: ['Poppins', 'sans'],
+        },
+        colors: {
+          primary: "#868686",
+          secondary: "#4E4B4B",
+          special: "#D4D4D4",
+          specialOne: "#D9D9D9"
+
+        },
+        backgroundImage: (theme) => ({
+          "banner": "url(/images/Banner.png)",
+        })
       },
     },
   },
