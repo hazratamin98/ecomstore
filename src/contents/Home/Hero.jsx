@@ -9,7 +9,7 @@ import HeroImage from "@/assets/HeroImg.png";
 
 function Hero() {
   return (
-    <div className="bg-[#D4D4D4]  flex items-center justify-center">
+    <div className="bg-[#D4D4D4]  grid grid-flow-col grid-cols-2">
       {/* <Container> */}
       {/* <div className=" "> */}
       <div className="flex flex-col items-center space-y-4">
